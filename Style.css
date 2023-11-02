@@ -1,0 +1,61 @@
+h1 {
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+}
+
+img {
+    width: 450px;
+}
+
+.first {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.third {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+p {
+    text-align: center;
+}
+
+figure {
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: #FF00EE;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: dashed white;
+}
+
+figcaption {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.SecPic {
+    background-color: darkgray;
+}
+
+.ThrPic {
+    background-color: coral;
+}
+
+.FRef {
+    margin-left: 700px;
+}
+
+.SRef {
+    margin-left: 410px;
+}
+
+.SRefM {
+    margin-left: 380px;
+}
