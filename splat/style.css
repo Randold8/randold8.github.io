@@ -11,14 +11,14 @@ body {
 }
 
 header {
+}
+.logo {
   position: relative;
   text-align: center;
 }
-.logo {
-}
 .header-text {
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 60%;
   transform: translate(-50%, -50%);
   font-size: 50px;
