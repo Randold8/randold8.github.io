@@ -1,5 +1,5 @@
 body {
-  background-color: #2196F3;
+  background-color: rgb(13,13,13);
   color: #FFF;
   overflow-x: hidden;
   display: flex;
@@ -11,6 +11,7 @@ body {
 }
 
 header {
+  background-color: #007bff;
 }
 .logo {
   position: relative;
@@ -111,6 +112,17 @@ h2 {
 .discounted {
   background-image: url('img/bg-tapes2.jpg');
 }
+.info {
+  margin-top:50px;
+  margin-bottom:50px;
+  display:flex;
+}
+.info iframe {
+  margin-left:100px;
+}
+.infotext {
+  margin-left: 150px;
+}
 
 footer {
   margin-top: auto;
@@ -124,12 +136,17 @@ footer {
   font-size: 30px;
   text-align: right;
   z-index:99;
-  background-color: black;
+  background-color: rgb(13,13,13);
   border-radius: 20px;
   padding: 10px;
 }
-.cart button {
-  font-size: large;
+.cart-buttons {
+  display:flex;
+  margin-top:10px;
+}
+.cart button, .cart a button {
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 
