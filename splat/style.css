@@ -35,6 +35,7 @@ nav a:hover {
 
 h2 {
   color: #FBC02D;
+  font-size: 50px;
 }
 
 .products {
@@ -97,17 +98,17 @@ h2 {
   top: 0px;
 }
 
-#main-section {
-  background-image: url('img/bg-tapes.jpg');
+.main-section, .discounted {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+}
+.main-section {
+  background-image: url('img/bg-tapes.jpg');
 }
 .discounted {
   background-image: url('img/bg-tapes2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 footer {
