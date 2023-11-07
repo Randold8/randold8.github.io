@@ -9,7 +9,6 @@ if(cookieTotal) {
 document.getElementById('cart-total').innerText = '$' + totalCost;
 // Add event listeners to each button
 let addButtons = document.querySelectorAll('.product button');
-
 addButtons.forEach(button => {
   button.addEventListener('click', () => {
     let price = button.parentElement.querySelector('p').innerText;
@@ -20,6 +19,13 @@ addButtons.forEach(button => {
     // Save updated total to cookie
     setCookie('cartTotal', totalCost, 30);
   });
+});
+let clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', () => {
+  totalCost = 0;
+  document.getElementById('cart-total').innerText = '$' + totalCost;
+  // Save updated total to cookie
+  setCookie('cartTotal', totalCost, 30);
 });
 
 // Helper functions for cookies
