@@ -6,15 +6,19 @@ let roundedTotalCost = 0
 let cookieTotal = getCookie('cartTotal');
 if(cookieTotal) {
   totalCost = parseFloat(cookieTotal);
+  roundedTotalCost = totalCost.toFixed(2);
 }
-document.getElementById('cart-total').innerText = 'Your total: $' + totalCost;
+document.getElementById('cart-total').innerText = 'Your total: $' + roundedTotalCost;
 // Add event listeners to each button
 let addButtons = document.querySelectorAll('.product button');
 addButtons.forEach(button => {
   button.addEventListener('click', () => {
-    let price = button.parentElement.querySelector('p').innerText;
-    let cost = parseFloat(price.replace('$', ''));
+    let priceElement = button.parentElement.querySelector('p');
 
+    // Get non-crossed-out price
+    let price = priceElement.innerText.split('$')[priceElement.innerText.split('$').length-1];
+    // Parse price
+    let cost = parseFloat(price);
     totalCost += cost;
     roundedTotalCost = totalCost.toFixed(2);
     document.getElementById('cart-total').innerText = 'Your total: $' + roundedTotalCost;

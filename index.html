@@ -95,7 +95,7 @@
             <h2>Добро пожаловать!</h2>
             <p>На этом сайте ссылки на все домашние задания майнора веб-разработка.</p>
             <a href="splat/index.html">
-            <img id="myImage" src="img/image0.jpg">
+            <img id="myImage" src="img/image0.png" style="width:400px;">
             </a>
         </div>
         <div class="grid">
@@ -112,7 +112,7 @@
     function flipImage() {
       var image = document.getElementById('myImage');
       imgSrc = (imgSrc + 1) % 2;
-      image.src = "img/image" + imgSrc + ".jpg";
+      image.src = "img/image" + imgSrc + ".png";
     }
     setInterval(flipImage, 1000);
   </script>
