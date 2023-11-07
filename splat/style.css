@@ -40,8 +40,12 @@ header img:last-child {
   font-weight: bold;
   text-shadow: 2px 2px 3px black;
 }
-nav a {
+nav a, p {
+  margin:0;
   color: #000;
+  display:inline-block;
+  padding:5px;
+  border-radius: 15px;
 }
 
 nav a:hover {
@@ -82,7 +86,9 @@ h2 {
 .product-info {
   text-align: center;
 }
-
+.product-info p {
+  color:yellow;
+}
 .product-grid {
   width: 80%;
   margin: 0 auto;
@@ -141,6 +147,7 @@ h2 {
 }
 .infotext p {
   font-size:20px;
+  color:white;
 }
 .info img {
   width:200px;
