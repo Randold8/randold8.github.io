@@ -7,7 +7,7 @@ let cookieTotal = getCookie('cartTotal');
 if(cookieTotal) {
   totalCost = parseFloat(cookieTotal);
 }
-document.getElementById('cart-total').innerText = '$' + totalCost;
+document.getElementById('cart-total').innerText = 'Your total: $' + totalCost;
 // Add event listeners to each button
 let addButtons = document.querySelectorAll('.product button');
 addButtons.forEach(button => {
@@ -17,7 +17,7 @@ addButtons.forEach(button => {
 
     totalCost += cost;
     roundedTotalCost = totalCost.toFixed(2);
-    document.getElementById('cart-total').innerText = '$' + roundedTotalCost;
+    document.getElementById('cart-total').innerText = 'Your total: $' + roundedTotalCost;
     // Save updated total to cookie
     setCookie('cartTotal', totalCost, 30);
   });
@@ -25,7 +25,7 @@ addButtons.forEach(button => {
 let clearButton = document.getElementById('clear-button');
 clearButton.addEventListener('click', () => {
   totalCost = 0;
-  document.getElementById('cart-total').innerText = '$' + totalCost;
+  document.getElementById('cart-total').innerText = 'Your total: $0';
   // Save updated total to cookie
   setCookie('cartTotal', totalCost, 30);
 });
