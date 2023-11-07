@@ -138,12 +138,25 @@ h2 {
   margin-bottom:50px;
   display:flex;
 }
+.info::after {
+  content: "";
+  background: url('img/graffito.webp') no-repeat;
+  background-size: 300px 300px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: -170px;
+  right: 150px;
+  opacity: 0.3;
+  transform: rotate(2deg);
+}
 .info iframe {
   margin-left:100px;
 }
 .infotext {
   margin-left: 150px;
   margin-right:150px;
+  z-index: 10;
 }
 .infotext p {
   font-size:20px;
