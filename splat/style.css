@@ -91,7 +91,7 @@ h2 {
   object-fit: cover;
 }
 .stretch1 {
-  transform: rotate(2deg);
+  transform: rotate(3deg);
   top: 70px;
 }
 .stretch2 {

@@ -1,5 +1,6 @@
 
 let totalCost = 0;
+let roundedTotalCost = 0
 
 // Get total from cookie if it exists
 let cookieTotal = getCookie('cartTotal');
@@ -15,7 +16,8 @@ addButtons.forEach(button => {
     let cost = parseFloat(price.replace('$', ''));
 
     totalCost += cost;
-    document.getElementById('cart-total').innerText = '$' + totalCost;
+    roundedTotalCost = totalCost.toFixed(2);
+    document.getElementById('cart-total').innerText = '$' + roundedTotalCost;
     // Save updated total to cookie
     setCookie('cartTotal', totalCost, 30);
   });
