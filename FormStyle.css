@@ -5,9 +5,10 @@ form{
 }
 fieldset{
     border: solid 3px;
+    border-color: #7f0a0a;
 }
 legend {
-    background-color: #000;
+    background-color: #7f0a0a;
     color: #fff;
     padding: 3px 6px;
     margin: auto;
@@ -21,7 +22,7 @@ p {
  }
 
 .button {
-    background-color: #000;
+    background-color: #7f0a0a;
     border: solid 0;
     border-radius: 5px;
     color: #fff;
@@ -31,7 +32,7 @@ p {
 }
 
 .button0 {
-    background-color: #000;
+    background-color: #7f0a0a;
     border: solid 0;
     border-radius: 5px;
     color: #fff;
