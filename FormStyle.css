@@ -1,0 +1,50 @@
+form{
+    font-family: Verdana, sans-serif;
+    width: 500px;
+    margin: auto;
+}
+fieldset{
+    border: solid 3px;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    margin: auto;
+}
+p {
+    text-align: center;
+}
+
+.block1{
+    padding-bottom: 3px;
+ }
+
+.button {
+    background-color: #000;
+    border: solid 0;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    padding: 7px 9px;
+    font-size: 16px;
+}
+
+.button0 {
+    background-color: #000;
+    border: solid 0;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    padding: 7px 9px;
+}
+
+.input {
+    font-family: Verdana, sans-serif;
+    border: 2px solid;
+    padding: 3px;
+}
+
+input[type='radio'] {
+    accent-color: darkgray;
+}

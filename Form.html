@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="FormStyle.css">
+</head>
+<body>
+  <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <fieldset>
+      <legend>Make order</legend>
+      <div class="block1">
+      <p>
+        <input class="input" name="name" type="text" value="" placeholder="What is your name?">
+      </p>
+      <p>
+        <input class="input" name="email" type="text" value="" placeholder="Email">
+      </p>
+      <p>
+        <input class="input" name="phoneNumber" type="text" value="" placeholder="Phone number">
+      </p>
+      </div>
+      <div class="block1">
+      <p>
+        What would you like to get?:<br>
+        <input name="age" type="radio" id="1" value="IPhone">
+        <label for="1">IPhone</label><br>
+        <input name="age" type="radio" id="2" value="Samsung">
+        <label for="2">Samsung</label><br>
+        <input name="age" type="radio" id="3" value="OnePlus">
+        <label for="3">OnePlus</label><br>
+      </p>
+      </div>
+      <div class="block1">
+      <p>
+        Your budget:
+        <select class="button0" name="eng">
+          <option value="100-500$">100-500$</option>
+          <option value="500-750$">500-750$</option>
+          <option value=">750$">>750$</option>
+        </select>
+      </p>
+      </div>
+      <p>
+        <input class="button" name="submit" type="Submit" value="Submit">
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
