@@ -20,6 +20,8 @@ function updateValues() {
   nameEl.innerText = randomName;
   birthYearEl.innerText = randomBirthYear;
 
+  document.title = "Изменяем кириллицу на латиницу по клику";
+
 }
 
 function generateRandomString(length) {

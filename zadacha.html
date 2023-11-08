@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Решение алгоритмической задачи</title>
+</head>
+<body>
+    <h1>Решение алгоритмической задачи</h1>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <label for="a">A:</label><br>
+    <input type="number" id="a" name="a"><br>
+    <label for="b">B:</label><br>
+    <input type="number" id="b" name="b"><br>
+    <label for="c">C:</label><br>
+    <input type="number" id="c" name="c"><br>
+    <label for="m">M:</label><br>
+    <input type="number" id="m" name="m"><br>
+    <label for="k">K:</label><br>
+    <input type="number" id="k" name="k"><br>
+    <label for="k">Вердикт</label><br>
+    <p id="result" name="q"></p><br>
+    <label for="k">K:</label><br>
+    <input type="button" onclick="check()"value="Войдет?"></input><br>
+    <label for="k">K:</label><br>
+    <input type="button" onclick="search()"value="Поиск в Bing"></input>
+    </form>
+
+    <script>
+        function check() {
+            var a = +document.getElementById("a").value;
+            var b = +document.getElementById("b").value;
+            var c = +document.getElementById("c").value;
+            var m = +document.getElementById("m").value;
+            var k = +document.getElementById("k").value;
+
+            var box = [a, b, c].sort((a, b) => a - b);
+            var door = [m, k].sort((a, b) => a - b);
+
+            if (box[0] <= door[0] && box[1] <= door[1]) {
+                document.getElementById("result").innerHTML = "ВОЙДЕТ!";
+            } else {
+                document.getElementById("result").innerHTML = "НЕ ВОЙДЕТ!";
+            }
+        }
+        function search() {
+            document.getElementById("UserEnter").submit();
+            var pContent = document.getElementById("result").innerHTML;
+            window.location.href = 'http://www.google.com/search?q=' + pContent;
+        }
+    </script>
+</body>
+</html>
+
+
