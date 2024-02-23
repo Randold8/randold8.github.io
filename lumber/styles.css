@@ -326,6 +326,7 @@ body {
 
 @media (max-width: 768px) {
     .site-header {
+        background-color: rgb(212, 77, 32);
         display: flex;
         justify-content: center;
     }
@@ -354,8 +355,9 @@ body {
         font-size: calc(3vh + 2vw);
         text-align: center;
         width: 100%;
-        margin-top: 2vh;
-        margin-bottom: 5vh;
+        padding-top: 2vh;
+        padding-bottom: 5vh;
+        margin:0;
     }
 
     .tagline {
@@ -384,14 +386,20 @@ body {
 
 
     .content {
+        text-align: center;
+        display:flex;
+        flex-direction: column;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
         max-height: 0;
         /* Initially content is hidden */
-        background-color: green;
+        background-color: rgb(225, 103, 62);
     }
 
-    .close-button {
+    .close-button, #scrollButton {
         display: none
+    }
+    .site-footer {
+        background-color: rgb(212, 77, 32);
     }
 }
