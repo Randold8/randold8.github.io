@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Section</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap"rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo-container">
+      <img src="images/other/vyksalumber-nobg.png" alt="Business Logo" id="header-logo" />
+    </a>
+  </header>
+  <main>
+    <span class="tagline">
+      <p>
+        Лучший выбор для постройки вашей мечты.
+      </p>
+    </span>
+    <section class="toggles">
+      <div class="toggle-section" id="section1">
+        <p>Пиломатериалы</p>
+        <img src="images/products/lumber.png"></img>
+      </div>
+      <div id="content-section1" class="content lumber-selection">
+        <label for="material">Material:</label>
+        <select id="material" name="material">
+          <option value="pine">Pine</option>
+          <option value="birch">Birch</option>
+          <option value="oak">Oak</option>
+        </select>
+
+        <label for="size">Size (cm):</label>
+        <select id="size" name="size">
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="300">300</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+        <button type="button" onclick="addToOrder('content-section1')">Add to Order</button>
+        <button class="close-button" id="close-section1">X</button>
+      </div>
+      <div class="toggle-section" id="section2">
+        <p>Щепа</p>
+        <img src="images/products/woodchip3.png"></img>
+      </div>
+      <div id="content-section2" class="content lumber-selection">
+        <label for="chip-material">Material:</label>
+        <select id="chip-material" name="material">
+          <option value="pine">Pine</option>
+          <option value="birch">Birch</option>
+          <option value="oak">Oak</option>
+        </select>
+      
+        <label for="size-litres">Size (litres):</label>
+        <select id="size-litres" name="size">
+          <option value="40">40</option>
+          <option value="60">60</option>
+          <option value="80">80</option>
+        </select>
+      
+        <label for="chip-quantity">Quantity:</label>
+        <input type="number" id="chip-quantity" name="quantity" min='1' value="1">
+      
+        <button type='button' onclick="addToOrder('content-section2')">Add to Order</button>
+        <button class="close-button" id="close-section2">X</button>
+      </div>
+      <div class="toggle-section" id="section3">
+        <p>Щеповоз</p>
+        <img src="images/products/chipmobile.png"></img>
+      </div>
+      <div class="content lumber-selection" id="content-section3">
+        <label for='address'>Delivery Address:</label>
+        <input type='text' id='address' name='address'>
+      
+        <label for='delivery-date'>Delivery Date:</label>
+        <input type="text" id="delivery-date" name="date">
+
+        <button type="button" onclick="addToOrder('content-section3')">Schedule Delivery</button>
+        <button class="close-button" id="close-section3">X</button>
+      </div>
+    </section>
+    <section class="cart-section" id="cartSection">
+      <div style="background-color: red; height:100%">
+      <div id="orders-div">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="phone-number">+7 123 456 78 90</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+
+</body>
+
+</html>
