@@ -17,7 +17,7 @@
       <img src="images/other/vyksalumber-nobg.png" alt="Business Logo" id="header-logo" />
     </a>
   </header>
-  <main>
+  <main class="main">
     <span class="tagline">
       <p>
         Лучший выбор для постройки вашей мечты.
@@ -90,12 +90,15 @@
       </div>
     </section>
     <section class="cart-section" id="cartSection">
-      <div style="background-color: red; height:100%">
-      <div id="orders-div">
-        </div>
+        <div id="orders-div"></div>
+        <div class="order-call">
+          <p>Ваш номер телефона:</p>
+          <input type="tel" id="phone-number" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}">
+          <button id="order-call-button">Order Call</button>
       </div>
     </section>
   </main>
+  <button id="scrollButton">Оформить заказ</button>
   <footer class="site-footer">
     <p class="phone-number">+7 123 456 78 90</p>
   </footer>
