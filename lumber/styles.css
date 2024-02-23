@@ -143,6 +143,9 @@ body {
         margin-right: auto;
         margin-bottom: 10px;
     }
+    #content-section3 input {
+        width: 60%;
+    }
 
     .lumber-selection button {
         background-color: #4CAF50;
@@ -209,7 +212,7 @@ body {
         overflow-y: scroll;
         overflow: auto;
         background-color: #a8a29f;
-        ;
+        text-align: center;
         padding-top: 5vh;
         padding-bottom: 5vh;
         scrollbar-color: #6969dd #e0e0e0;
@@ -237,7 +240,7 @@ body {
     .order-call {
         display: inline-block;
         text-align: center;
-        max-width: 300px;
+        max-width: 25vw;
         margin: auto;
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

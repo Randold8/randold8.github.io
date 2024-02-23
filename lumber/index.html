@@ -31,22 +31,23 @@
       <div id="content-section1" class="content lumber-selection">
         <label for="material">Material:</label>
         <select id="material" name="material">
-          <option value="pine">Pine</option>
-          <option value="birch">Birch</option>
-          <option value="oak">Oak</option>
+          <option value="Дуб">Дуб</option>
+          <option value="Береза">Береза</option>
+          <option value="Ель">Ель</option>
         </select>
 
-        <label for="size">Size (cm):</label>
+        <label for="size">Объем (в м<sup>3</sup>)</label>
         <select id="size" name="size">
-          <option value="100">100</option>
-          <option value="200">200</option>
-          <option value="300">300</option>
+          <option value="10">1</option>
+          <option value="20">1</option>
+          <option value="30">2</option>
         </select>
 
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" value="1">
 
         <button type="button" onclick="addToOrder('content-section1')">Add to Order</button>
+        <p id="price">15 000 руб. без НДС</p>
         <button class="close-button" id="close-section1">X</button>
       </div>
       <div class="toggle-section" id="section2">
@@ -56,20 +57,21 @@
       <div id="content-section2" class="content lumber-selection">
         <label for="chip-material">Material:</label>
         <select id="chip-material" name="material">
-          <option value="pine">Pine</option>
-          <option value="birch">Birch</option>
-          <option value="oak">Oak</option>
+          <option value="Дуб">Дуб</option>
+          <option value="Береза">Береза</option>
+          <option value="Ель">Ель</option>
         </select>
       
-        <label for="size-litres">Size (litres):</label>
+        <label for="size-litres">Объем (насыпной м<sup>3</sup>)</label>
         <select id="size-litres" name="size">
-          <option value="40">40</option>
-          <option value="60">60</option>
-          <option value="80">80</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
         </select>
       
         <label for="chip-quantity">Quantity:</label>
         <input type="number" id="chip-quantity" name="quantity" min='1' value="1">
+        <p id="price">450 руб. без НДС</p>
       
         <button type='button' onclick="addToOrder('content-section2')">Add to Order</button>
         <button class="close-button" id="close-section2">X</button>
@@ -84,17 +86,22 @@
       
         <label for='delivery-date'>Delivery Date:</label>
         <input type="text" id="delivery-date" name="date">
+        <p>Тариф - 100 руб/км.</p>
 
         <button type="button" onclick="addToOrder('content-section3')">Schedule Delivery</button>
         <button class="close-button" id="close-section3">X</button>
       </div>
     </section>
     <section class="cart-section" id="cartSection">
-        <div id="orders-div"></div>
+        <div id="orders-div">
+          <p>Ваш заказ:</p>
+        </div>
+
         <div class="order-call">
+          <p id="totalCost">Общая стоимость - 0 руб.</p>
           <p>Ваш номер телефона:</p>
           <input type="tel" id="phone-number" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}">
-          <button id="order-call-button">Order Call</button>
+          <button id="order-call-button">Заказать звонок</button>
       </div>
     </section>
   </main>
@@ -103,6 +110,7 @@
     <p class="phone-number">+7 123 456 78 90</p>
   </footer>
   <script src="script.js"></script>
+  <script src="price.js"></script>
   <script src="cart.js"></script>
 
 </body>
