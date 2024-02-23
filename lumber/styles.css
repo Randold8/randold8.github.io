@@ -138,6 +138,7 @@ body {
     .lumber-selection select,
     .lumber-selection input,
     .lumber-selection button {
+        font-size: calc(0.7vw + 1vh);
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
@@ -247,6 +248,7 @@ body {
     }
 
     .order-call input[type=tel] {
+        font-size: calc(0.8vw + 1vh);
         width: calc(100% - 22px);
         padding: 10px;
         margin-bottom: 10px;
@@ -255,6 +257,7 @@ body {
     }
 
     #order-call-button {
+        font-size: calc(0.8vw + 1vh);
         width: 100%;
         padding: 10px;
         background-color: green;
@@ -273,7 +276,6 @@ body {
     }
 
     #scrollButton {
-
         position: fixed;
         /* Fixed position */
         bottom: 15vh;
@@ -291,7 +293,7 @@ body {
         color: white;
         border: none;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: calc(0.8vw + 1vh);
         cursor: pointer;
         outline: none;
         /* Removes the outline effect on focus */
